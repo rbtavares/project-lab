@@ -1,0 +1,7 @@
+# General
+/.vscode/
+
+# 1 - Python
+/1_python/.venv
+/1_python/**/__pycache__
+/1_python/cache

@@ -16,3 +16,7 @@ To create a virtual environment you must run `python3 -m venv .venv`. Switching 
 To install the required modules use `python3 -m pip install -r requirements.txt`.
 
 After the environment is correctly setup, use `python3 run.py` to run the application.
+
+## Details
+
+The application consists (as of now) of an API service for the gas prices, scraped from the website. The API offers only one simple endpoint `/api/prices` which will give the information about the gas prices. The application also has a cache system, which prevents a possible flooding of requests to the original website, the cache data is stored in `/cache/price_data.json`.
