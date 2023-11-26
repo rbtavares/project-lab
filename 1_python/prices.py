@@ -9,8 +9,7 @@ from scraping import extractData as scrapeGasPrices
 
 # Constants
 CACHE_PATH = './cache/price_data.json'
-#CACHE_TTL = 60 * 60 * 2 # 2 hours
-CACHE_TTL = 10
+CACHE_TTL = 60 * 60 * 6 # 6 hours
 
 # Get Gas Prices
 def getGasPrices():
