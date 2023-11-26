@@ -9,7 +9,7 @@ from scraping import extractData as scrapeGasPrices
 
 # Constants
 CACHE_PATH = './cache/price_data.json'
-CACHE_TTL = 60 * 60 * 6 # 6 hours
+CACHE_TTL = 60 * 60 * 2 # 2 hours
 
 # Get Gas Prices
 def getGasPrices():
@@ -59,8 +59,3 @@ def writeCache(data):
     with open(CACHE_PATH, 'w') as fd:
         json.dump(data, fd)
     return
-
-
-#! DEBUG AREA
-if __name__ == "__main__":
-    print(getGasPrices())
