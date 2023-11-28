@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-# Moudles
+# Modules
 from flask import Flask, jsonify
-from prices import getGasPrices
+from utils.prices import getGasPrices
 
 # Web App
 app = Flask(__name__)

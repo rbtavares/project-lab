@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-# Moudles
+# Modules
 import os
 import time
 import json
 import requests
-from scraping import extractData as scrapeGasPrices
+from utils.scraping import extractData as scrapeGasPrices
 
 # Constants
 CACHE_PATH = './cache/price_data.json'
@@ -13,16 +13,17 @@ CACHE_TTL = 60 * 60 * 2 # 2 hours
 
 # Get Gas Prices
 def getGasPrices():
-    
     # If cache is valid, use cache
     if hasCacheFile():
-        
         # Load Cache
         cache_data = loadCache()
 
         # Check Cache data validity
         if isCacheFileValid(cache_data):
             return loadCache()
+    else:
+        # Create cache directory
+        os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
 
     # Scrape gas prices
     price_data = scrapeGasPrices()
