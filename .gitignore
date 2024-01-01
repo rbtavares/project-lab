@@ -5,3 +5,6 @@
 /1_python/.venv
 /1_python/**/__pycache__
 /1_python/cache
+
+# 2 - Java
+/2_java/.vscode
