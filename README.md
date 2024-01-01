@@ -1,6 +1,6 @@
 # Project Lab
 
-![GitHub Repo stars](https://img.shields.io/github/stars/rbtavares/project-lab)
+![GitLab last commit](https://img.shields.io/github/last-commit/rbtavares/project-lab/main)
 ![GitHub License](https://img.shields.io/github/license/rbtavares/project-lab)
 
 ## Introduction
